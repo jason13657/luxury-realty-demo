@@ -4,9 +4,13 @@ import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 
 export const metadata: Metadata = {
-  title: "Sterling Realty — South Florida Luxury Real Estate",
+  title: "Sterling Realty — Portfolio Sample (Not a Real Service)",
   description:
-    "Discover Miami's most extraordinary properties. Sterling Realty specializes in luxury waterfront estates, penthouses, and premium South Florida real estate.",
+    "Frontend portfolio demo built with Next.js, Framer Motion, and Leaflet. This is a sample project and not a real real estate service.",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function RootLayout({
