@@ -1,0 +1,452 @@
+/* Stats */
+.statsSection {
+  background: var(--navy-mid);
+  border-top: 1px solid rgba(201, 168, 76, 0.2);
+  border-bottom: 1px solid rgba(201, 168, 76, 0.1);
+  padding: 3rem 2rem;
+}
+
+.statsGrid {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
+
+.statItem {
+  text-align: center;
+  padding: 1rem 0;
+  border-right: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.statItem:last-child {
+  border-right: none;
+}
+
+.statValue {
+  font-family: "Playfair Display", serif;
+  font-size: 2.75rem;
+  font-weight: 600;
+  color: var(--gold-light);
+  line-height: 1;
+  margin-bottom: 0.4rem;
+}
+
+.statLabel {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+/* Shared section styles */
+.section {
+  padding: 6rem 0;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.75rem;
+}
+
+.sectionTitle {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 0.75rem;
+}
+
+.sectionTitle em {
+  font-style: italic;
+  color: var(--gold-light);
+}
+
+.sectionSub {
+  max-width: 520px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.7;
+}
+
+.bodyText {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.8;
+  margin: 1rem 0 1.5rem;
+}
+
+/* Properties grid */
+.propertiesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.viewAllWrap {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.viewAll {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 2rem;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 2px;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.viewAll:hover {
+  background: var(--gold);
+  color: var(--navy);
+}
+
+/* Why Sterling */
+.whySection {
+  padding: 0;
+  overflow: hidden;
+}
+
+.whyInner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 640px;
+}
+
+.whyImage {
+  position: relative;
+  overflow: hidden;
+}
+
+.whyImg {
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.whySection:hover .whyImg {
+  transform: scale(1.04);
+}
+
+.whyImageOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, transparent 60%, var(--navy) 100%);
+  z-index: 1;
+}
+
+.whyBadge {
+  position: absolute;
+  bottom: 3rem;
+  left: 3rem;
+  z-index: 2;
+  background: var(--gold);
+  color: var(--navy);
+  padding: 1.25rem 1.5rem;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.whyBadgeNum {
+  display: block;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.whyBadgeText {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-top: 0.25rem;
+}
+
+.whyContent {
+  background: var(--navy-mid);
+  padding: 5rem 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.pillars {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.pillar {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.pillarIcon {
+  color: var(--gold);
+  font-size: 1rem;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.pillarTitle {
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 0.2rem;
+}
+
+.pillarDesc {
+  font-size: 0.83rem;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.btnGold {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  background: var(--gold);
+  color: var(--navy);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 2px;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+}
+
+.btnGold:hover {
+  background: var(--gold-light);
+  transform: translateY(-2px);
+}
+
+/* Map CTA */
+.mapCta {
+  background: linear-gradient(135deg, var(--navy-mid) 0%, var(--navy-light) 100%);
+  padding: 6rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.mapCta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("https://images.unsplash.com/photo-1476041800959-2f6bb412c8ce?w=1600&q=60") center / cover no-repeat;
+  opacity: 0.06;
+}
+
+.mapCtaContent {
+  position: relative;
+  z-index: 1;
+}
+
+/* Team */
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.teamCard {
+  overflow: hidden;
+  border-radius: 4px;
+  background: var(--navy-mid);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s;
+}
+
+.teamCard:hover {
+  transform: translateY(-6px);
+  border-color: rgba(201, 168, 76, 0.25);
+}
+
+.teamImageWrap {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+}
+
+.teamImage {
+  object-fit: cover;
+  object-position: top;
+  transition: transform 0.5s ease;
+}
+
+.teamCard:hover .teamImage {
+  transform: scale(1.05);
+}
+
+.teamOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(10, 22, 40, 0.8) 0%, transparent 60%);
+}
+
+.teamBody {
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.teamName {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 0.25rem;
+}
+
+.teamRole {
+  font-size: 0.78rem;
+  color: var(--gold);
+  letter-spacing: 0.05em;
+}
+
+/* CTA Banner */
+.ctaBanner {
+  background: var(--gold);
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.ctaBannerContent {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.ctaTitle {
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  color: var(--navy);
+  margin-bottom: 0.75rem;
+}
+
+.ctaText {
+  font-size: 1rem;
+  color: rgba(10, 22, 40, 0.65);
+  margin-bottom: 2rem;
+}
+
+.ctaActions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btnPrimary {
+  padding: 0.875rem 2.25rem;
+  background: var(--navy);
+  color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: background 0.2s;
+}
+
+.btnPrimary:hover {
+  background: var(--navy-light);
+}
+
+.btnOutline {
+  padding: 0.875rem 2.25rem;
+  border: 2px solid var(--navy);
+  color: var(--navy);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 2px;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.btnOutline:hover {
+  background: var(--navy);
+  color: var(--white);
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .propertiesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .teamGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .whyInner {
+    grid-template-columns: 1fr;
+  }
+
+  .whyImage {
+    height: 400px;
+  }
+
+  .whyContent {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .statItem {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  }
+
+  .propertiesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .teamGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .teamGrid {
+    grid-template-columns: 1fr;
+  }
+}

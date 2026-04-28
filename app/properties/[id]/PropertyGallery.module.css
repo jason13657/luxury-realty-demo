@@ -1,0 +1,56 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.mainSwiper {
+  width: 100%;
+  height: 560px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.thumbSwiper {
+  width: 100%;
+  height: 80px;
+}
+
+.thumbSlide {
+  position: relative;
+  height: 80px;
+  cursor: pointer;
+  border-radius: 2px;
+  overflow: hidden;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+  border: 2px solid transparent;
+}
+
+:global(.swiper-slide-thumb-active) .thumbSlide {
+  opacity: 1;
+  border-color: var(--gold);
+}
+
+.thumbSlide:hover {
+  opacity: 0.8;
+}
+
+.thumbImage {
+  object-fit: cover;
+}
+
+@media (max-width: 700px) {
+  .mainSwiper {
+    height: 280px;
+  }
+}

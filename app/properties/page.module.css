@@ -1,0 +1,64 @@
+.pageHero {
+  position: relative;
+  padding: 10rem 2rem 5rem;
+  text-align: center;
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+  overflow: hidden;
+}
+
+.pageHero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1600&q=60") center / cover no-repeat;
+  opacity: 0.08;
+}
+
+.pageHeroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(10, 22, 40, 0.6) 0%, var(--navy) 100%);
+}
+
+.pageHeroContent {
+  position: relative;
+  z-index: 1;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.75rem;
+}
+
+.pageTitle {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.pageSub {
+  max-width: 480px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 4rem;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.9rem;
+}
